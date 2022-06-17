@@ -42,4 +42,51 @@ $(function () {
 	});
 
 
+	$('.gallery').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		mainClass: 'mfp-img',
+		tLoading: 'Загрузка изоброжения',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+		}
+	});
+
+	$(".doctor-slider").slick({
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		dots: false,
+		infinite: true,
+		arrows: true,
+		// rows - удоляет пустые div
+		rows: 0,
+		nextArrow: $(".block__slick-next"),
+		prevArrow: $(".block__slick-prev"),
+
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					dots: true,
+					arrows: false
+				}
+			},
+			{
+				breakpoint: 550,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: false
+				}
+			}
+
+
+		]
+	});
+
+
 })
