@@ -88,5 +88,23 @@ $(function () {
 		]
 	});
 
+	// accordion
+	function accordionBox() {
+		let accordionBtn = document.querySelectorAll(".quest-accordion-head");
+
+		accordionBtn.forEach(item => {
+			item.addEventListener('click', () => {
+				item.classList.toggle("active");
+				let panel = item.nextElementSibling;
+				if (panel.style.maxHeight) {
+					panel.style.maxHeight = null;
+				} else {
+					panel.style.maxHeight = panel.scrollHeight + "px";
+				}
+			})
+		})
+
+	}
+	accordionBox();
 
 })
