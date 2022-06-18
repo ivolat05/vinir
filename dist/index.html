@@ -558,7 +558,6 @@
 		
 				</div>
 			</div>
-			</div>
 		</section>
 		<section class="installation installation-padding">
 			<div class="container">
@@ -815,11 +814,9 @@
 					</button>
 					<div class="quest-accordion-body">
 						<p class="quest-accordion-text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-							et
-							dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-							aliquip
-							ex ea commodo consequat.
+							Вини́ры — фарфоровые или керамические накладки, замещающие внешний слой зубов. Они позволяют
+							корректировать нарушения формы и цвета зуба, а также защищают зубы. В результате восстановленный зуб
+							обретает прочность и не отличается от остальных.
 						</p>
 					</div>
 				</div>
@@ -831,11 +828,8 @@
 					</button>
 					<div class="quest-accordion-body">
 						<p class="quest-accordion-text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-							et
-							dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-							aliquip
-							ex ea commodo consequat.
+							Керамические виниры имеют естественный блеск и прозрачность как у своих зубов. Тогда как композитные
+							виниры выглядят менее натурально и имеют меньший срок службы от 3 до 5 лет.
 						</p>
 		
 					</div>
@@ -848,11 +842,7 @@
 					</button>
 					<div class="quest-accordion-body">
 						<p class="quest-accordion-text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-							et
-							dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-							aliquip
-							ex ea commodo consequat.
+							Процедура установки виниров полностью безболезнена.
 						</p>
 					</div>
 				</div>
@@ -864,11 +854,8 @@
 					</button>
 					<div class="quest-accordion-body">
 						<p class="quest-accordion-text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-							et
-							dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-							aliquip
-							ex ea commodo consequat.
+							Нет! Мы не удаляем нерв из зуба, так как это влечет к разрушению зуба. Установленные виниры будут с
+							вами всю жизнь!
 						</p>
 					</div>
 				</div>
@@ -879,19 +866,87 @@
 						Можно ли исправить выпирающий зуб виниром?
 					</button>
 					<div class="quest-accordion-body">
-						<p class="quest-accordion-text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-							et
-							dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-							aliquip
-							ex ea commodo consequat.
+						<p class="quest-accordion-text d-flex justify-content-between ">
+							Да, можно. Вы можете посмотреть наш кейс с таким случаем
+		
 						</p>
+		
 					</div>
 				</div>
 		
 			</div>
 		</section>
+		<section class="tell tell-padding">
+			<div class="container">
+				<div class="tel-wrapp d-flex justify-content-between">
+					<div class="tell-coll">
+						<h3 class="tell-title">
+							Остались вопросы?
+						</h3>
+						<p class="tell-text">
+							Оставьте свой номер, мы с Вами свяжемся в ближайшее время!
+						</p>
+						<form action="/" class="tel-form">
+							<div class="tel-form-row d-flex justify-content-between">
+								<input type="text" class="tel-input text-center" placeholder="Имя">
+								<input type="tel" class="tel-input mask-tell text-center" placeholder="Телефон">
+							</div>
+							<button type="submit"
+								class="tell-btn button button-white position-relative scroll-link d-flex align-items-center justify-content-center">
+								<span>
+									Перезвонить мне
+								</span>
+							</button>
+						</form>
+						<label class="tel-label position-relative d-flex justify-content-center">
+							<input type="checkbox" class="tel-label-input position-absolute	" checked>
+							<span class="tel-label-span position-relative">
+								согласен с обработкой персноальных данных
+							</span>
+						</label>
+					</div>
+					<div class="tel-box-img position-relative">
+						<img src="./assets/img/tell.png" alt="" class="tel-img ">
+						<img src="./assets/img/tell-woman.png" alt="" class="tel-img position-absolute">
+						<div class="record-box-text tel-box-text position-absolute">
+							<h5 class="recor-box-job">
+								Администратор клиники
+							</h5>
+							<p class="record-box-name">
+								Фролова Яна Александровна
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="maps maps-padding">
+			<div id="map" class="map"></div>
+		</div>
 	</div>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU">
+	</script>
+	<script>
+		// Функция ymaps.ready() будет вызвана, когда
+		// загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+		ymaps.ready(init);
+		function init() {
+			// Создание карты.
+			var myMap = new ymaps.Map("map", {
+				// Координаты центра карты.
+				// Порядок по умолчанию: «широта, долгота».
+				// Чтобы не определять координаты центра карты вручную,
+				// воспользуйтесь инструментом Определение координат.
+				center: [56.13605763595703, 40.426056522964025],
+				// Уровень масштабирования. Допустимые значения:
+				// от 0 (весь мир) до 19.
+				zoom: 18,
+				controls: []
+			});
+			myMap.behaviors.disable('scrollZoom');
+	
+		}
+	</script>
 	
 	<script src="assets/js/app.min.js"></script>
 </body>
