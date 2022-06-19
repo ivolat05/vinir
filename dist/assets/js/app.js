@@ -67,6 +67,13 @@ $(function () {
 
 		responsive: [
 			{
+				breakpoint: 1650,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			},
+			{
 				breakpoint: 992,
 				settings: {
 					slidesToShow: 2,
@@ -74,16 +81,17 @@ $(function () {
 					dots: true,
 					arrows: false
 				}
-			},
+			}
+			,
 			{
 				breakpoint: 550,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
-					dots: false
+					dots: true,
+					arrows: false
 				}
 			}
-
 
 		]
 	});

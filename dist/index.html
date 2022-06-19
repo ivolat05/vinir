@@ -12,30 +12,40 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="keywords" content="">
 	<meta name="description" content="">
+	<!--favicon-->
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#30c5ac">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 	<title>ЛК</title>
-	<link rel="stylesheet" href="assets/css/style.min.css"></head>
+	<link rel="stylesheet" href="assets/css/style.min.css">
+</head>
 
 <body>
 	<div class="page">
 		<header id="header" class="header header-padding ">
-			<div class="container d-flex align-items-start justify-content-between">
+			<div class="container d-flex align-items-lg-start align-items-center justify-content-between">
 				<div class="logo position-relative">
 					<img class="logo-img" src="./assets/img/logo.svg" alt="">
 				</div>
 				<nav class="header-nav">
 					<ul class="header-list d-flex align-items-center justify-content-between">
-						<li class="header-list-inner">
-							<a href="#" class="header-list-link  header-hover scroll-link  d-block  position-relative ">
+						<li class="header-list-inner d-none d-lg-block">
+							<a href="#"
+								class="header-list-link header-mob  header-hover scroll-link  d-block  position-relative ">
 								Главная
 							</a>
 						</li>
 						<li class="header-list-inner">
 							<a href="#"
-								class="header-list-link header-list-center scroll-link position-relative  d-flex align-items-center justify-content-center">
+								class="header-list-link  header-list-center scroll-link position-relative  d-flex align-items-center justify-content-center">
 								Керамические виниры
 							</a>
 						</li>
-						<li class="header-list-inner">
+						<li class="header-list-inner d-none d-lg-block">
 							<a href="#"
 								class="header-list-link   header-hover scroll-link  d-block   position-relative  text-center">
 								Имплантация
@@ -44,39 +54,46 @@
 					</ul>
 				</nav>
 				<div class="header-col">
-					<a href="tel:+74922773488" class="header-tell  header-hover  position-relative d-block text-end">
+					<a href="tel:+74922773488" class="header-tell  header-hover  position-relative d-none d-lg-block text-end">
 						+7 (4922) 773488
 					</a>
-					<a href=" #" class="header-btn d-flex justify-content-end  text-end">
+					<a href=" #" class="header-btn d-lg-flex d-none justify-content-end  text-end">
 						<span class="header-hover position-relative">
 							записаться на прием</span>
+					</a>
+					<a href="tel:74922773488" class="header-mob-btn d-lg-none d-flex align-items-center justify-content-center">
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M14.997 16C6.46601 16.012 -0.00899063 9.46 9.3707e-06 1.003C9.3707e-06 0.45 0.448009 0 1.00001 0H3.64001C4.13501 0 4.55601 0.364 4.62901 0.854C4.80311 2.02905 5.14493 3.17305 5.64401 4.251L5.74701 4.473C5.8162 4.62239 5.83108 4.79124 5.78909 4.95043C5.7471 5.10962 5.65088 5.24917 5.51701 5.345C4.69901 5.929 4.38701 7.104 5.02401 8.02C5.82599 9.17333 6.82695 10.1746 7.98001 10.977C8.89701 11.613 10.072 11.301 10.655 10.484C10.7507 10.3497 10.8904 10.2531 11.0498 10.211C11.2092 10.1688 11.3784 10.1836 11.528 10.253L11.749 10.355C12.827 10.855 13.971 11.197 15.146 11.371C15.636 11.444 16 11.865 16 12.361V15C16 15.1314 15.9741 15.2615 15.9238 15.3829C15.8735 15.5043 15.7997 15.6146 15.7068 15.7075C15.6138 15.8003 15.5034 15.874 15.382 15.9242C15.2606 15.9744 15.1304 16.0001 14.999 16H14.997Z"
+								fill="white" />
+						</svg>
 					</a>
 				</div>
 			</div>
 		</header>
-		<main class="main main-padding position-relative">
+		<main class="main  position-relative">
 			<div class="container">
-				<div class="main-wrapp d-flex ">
-					<div class="main-box">
-						<h1 class="main-title position-relative">
+				<div class="main-wrapp d-flex flex-column flex-lg-row justify-content-between  position-relative">
+					<div class="main-box main-padding">
+						<h1 class="main-title text-center text-lg-start position-relative">
 							Установим виниры
 						</h1>
-						<p class="main-text">
+						<p class="main-text  text-center text-lg-start">
 							за 1 визит
 						</p>
-						<a href="#"
-							class="main-btn button position-relative scroll-link d-flex align-items-center justify-content-center">
+						<a href="#" class="main-btn button  scroll-link d-flex align-items-center justify-content-center">
 							<span>
 								Получить консультацию стоматолога
 							</span>
 						</a>
 					</div>
-					<div class="main-box-img position-absolute">
-						<img src="./assets/img/main/main.png" alt="" class="main-img">
+					<div class="main-box-img">
+						<img src="./assets/img/main/main.png" alt="" class="main-img d-sm-block d-none">
+						<img src="./assets/img/main/main-2.png" alt="" class="main-img d-block d-sm-none">
 					</div>
 		
 				</div>
-				<div class="main-box-mess  d-flex align-items-center justify-content-center position-relative">
+				<div class="main-box-mess  d-lg-flex d-none align-items-center justify-content-center position-relative">
 					<a href="#" class="main-mess-link mess-hover d-flex align-items-center justify-content-center">
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path fill-rule="evenodd" clip-rule="evenodd"
@@ -100,13 +117,13 @@
 		
 					</a>
 				</div>
-				<div class="main-page d-flex justify-content-between">
+				<div class="main-page d-flex flex-wrap justify-content-around">
 					<div class="main-page-box">
 						<img src="./assets/img/main/main-1.svg" alt="" class="main-page-img">
-						<h3 class="main-page-title">
+						<h3 class="main-page-title  text-center text-lg-start">
 							Сделаем за 1 день
 						</h3>
-						<p class="main-page-text">
+						<p class="main-page-text  text-center text-lg-start">
 							Изготовим и установим виниры
 							в своей лаборатории
 						</p>
@@ -114,20 +131,20 @@
 		
 					<div class="main-page-box">
 						<img src="./assets/img/main/main-2.svg" alt="" class="main-page-img">
-						<h3 class="main-page-title">
+						<h3 class="main-page-title  text-center text-lg-start">
 							Сохраним ваши зубы
 						</h3>
-						<p class="main-page-text">
+						<p class="main-page-text  text-center text-lg-start">
 							Минимальная обточка в доли милиметров без удаления нерва
 						</p>
 					</div>
 		
 					<div class="main-page-box">
 						<img src="./assets/img/main/main-3.svg" alt="" class="main-page-img">
-						<h3 class="main-page-title">
+						<h3 class="main-page-title  text-center text-lg-start">
 							Естественный вид
 						</h3>
-						<p class="main-page-text">
+						<p class="main-page-text  text-center text-lg-start">
 							Виниры не окрашиваются
 							и не тускнеют со временем
 						</p>
@@ -135,10 +152,10 @@
 		
 					<div class="main-page-box">
 						<img src="./assets/img/main/main-4.svg" alt="" class="main-page-img">
-						<h3 class="main-page-title">
+						<h3 class="main-page-title  text-center text-lg-start">
 							Немецкое качество
 						</h3>
-						<p class="main-page-text">
+						<p class="main-page-text  text-center text-lg-start">
 							Работаем на cертифицированном немецком оборудовании CEREC
 						</p>
 					</div>
@@ -146,7 +163,7 @@
 				</div>
 			</div>
 		</main>
-		<section class="product product-ptadding">
+		<section id="product" class="product product-ptadding">
 			<div class="container product-container">
 				<h3 class="title product-title text-center">
 					Подберем идеальное решение <span>для вашей улыбки</span>
@@ -154,7 +171,7 @@
 				<p class="product-subtitle text-center">
 					Используем лучшие материалы для изготовления виниров
 				</p>
-				<div class="product-wrapp d-flex justify-content-evenly">
+				<div class="product-wrapp d-flex flex-wrap justify-content-evenly">
 		
 					<div class="product-cart">
 						<img src="./assets/img/product/product-1.jpg" alt="" class="product-img">
@@ -331,16 +348,16 @@
 				</h3>
 				<div class="step-wrapp">
 		
-					<div class="step-box d-flex align-items-center ">
+					<div class="step-box d-flex flex-lg-row  flex-column align-items-center ">
 						<img src="/assets/img/step/step-1.jpg" alt="" class="step-box-img">
 						<div class="step-box-wrapp position-relative">
 							<div class="step-head  position-relative">
-								<h4 class="step-head-title">
+								<h4 class="step-head-title text-lg-start text-center">
 									Первый шаг
 								</h4>
 							</div>
 							<div class="step-body">
-								<h4 class="step-body-title">
+								<h4 class="step-body-title  text-lg-start text-center">
 									Сканирование полости рта и прикуса
 								</h4>
 								<p class="step-body-text">
@@ -352,16 +369,16 @@
 						</div>
 					</div>
 		
-					<div class="step-box d-flex flex-row-reverse align-items-center ">
+					<div class="step-box d-flex flex-lg-row-reverse flex-column align-items-center ">
 						<img src="/assets/img/step/step-2.jpg" alt="" class="step-box-img">
 						<div class="step-box-wrapp --two step-box-wrapp-reverse position-relative">
 							<div class="step-head  position-relative">
-								<h4 class="step-head-title">
+								<h4 class="step-head-title  text-lg-start text-center">
 									Второй шаг
 								</h4>
 							</div>
 							<div class="step-body">
-								<h4 class="step-body-title">
+								<h4 class="step-body-title  text-lg-start text-center">
 									Моделирование Вашей улыбки
 								</h4>
 								<p class="step-body-text">
@@ -373,16 +390,16 @@
 						</div>
 					</div>
 		
-					<div class="step-box d-flex  align-items-center ">
+					<div class="step-box d-flex flex-lg-row  flex-column align-items-center ">
 						<img src="/assets/img/step/step-3.jpg" alt="" class="step-box-img">
 						<div class="step-box-wrapp --three position-relative">
 							<div class="step-head  position-relative">
-								<h4 class="step-head-title">
+								<h4 class="step-head-title  text-lg-start text-center">
 									Третий шаг
 								</h4>
 							</div>
 							<div class="step-body">
-								<h4 class="step-body-title">
+								<h4 class="step-body-title  text-lg-start text-center">
 									Изготовление
 								</h4>
 								<p class="step-body-text">
@@ -393,16 +410,16 @@
 						</div>
 					</div>
 		
-					<div class="step-box d-flex  flex-row-reverse align-items-center ">
+					<div class="step-box d-flex  flex-lg-row-reverse   flex-column align-items-center ">
 						<img src="/assets/img/step/step-4.jpg" alt="" class="step-box-img">
 						<div class="step-box-wrapp --four step-box-wrapp-reverse position-relative">
 							<div class="step-head position-relative">
-								<h4 class="step-head-title">
+								<h4 class="step-head-title  text-lg-start text-center">
 									Четвертый шаг
 								</h4>
 							</div>
 							<div class="step-body">
-								<h4 class="step-body-title">
+								<h4 class="step-body-title  text-lg-start text-center">
 									Примерка и фиксация
 								</h4>
 								<p class="step-body-text">
@@ -420,22 +437,24 @@
 				</div>
 			</div>
 		</section>
-		<section class="doctor doctor-padding">
+		<section class="doctor doctor-padding ">
 			<div class="container">
-				<div class="doctor-wrapp d-flex justify-content-start">
+				<div class="doctor-wrapp d-flex position-relative flex-lg-row flex-column justify-content-start">
 					<img src="./assets/img/doctor/doctor.jpg" alt="" class="doctor-img">
 					<div class="doctor-wrapp-coll">
-						<h3 class="doctor-subtitle">
-							Ведуший врач
-						</h3>
-						<h3 class="doctor-title">
-							клиники по винирам
-						</h3>
-						<div class="doctor-name">
-							Грачева Екатерина Вадимовна
+						<div class="doctor-position">
+							<h3 class="doctor-subtitle text-lg-start text-center">
+								Ведуший врач
+							</h3>
+							<h3 class="doctor-title  text-lg-start text-center">
+								клиники по винирам
+							</h3>
 						</div>
-						<div class="doctor-wrapper d-flex">
-							<ul class="doctor-list position-relative">
+						<div class="doctor-name position-relative  text-lg-start text-center">
+							Грачева <span>Екатерина Вадимовна</span>
+						</div>
+						<div class="doctor-wrapper d-flex flex-lg-row flex-column">
+							<ul class="doctor-list">
 								<li class="doctor-list-inner position-relative">
 									Доктор с 20-ти летним стажем
 								</li>
@@ -575,12 +594,12 @@
 				</h4>
 				<div class="installation-wrapp">
 		
-					<div class="installation-box d-flex justify-content-start align-items-end">
+					<div class="installation-box d-flex flex-lg-row flex-column justify-content-start align-items-end">
 						<div class="installation-box-img position-relative">
 							<img src="./assets/img/installation/installation-1.jpg" alt="" class=" installation-img">
 						</div>
 						<div class="installation-box-wrapp position-relative">
-							<h4 class="installation-box-title">
+							<h4 class="installation-box-title text-lg-start text-center">
 								Без обточки
 							</h4>
 							<p class="installation-text">
@@ -592,12 +611,12 @@
 					</div>
 		
 					<div
-						class="installation-box installation-box-rev d-flex flex-row-reverse justify-content-start align-items-end">
+						class="installation-box installation-box-rev d-flex flex-lg-row-reverse flex-column justify-content-start align-items-end">
 						<div class="installation-box-img position-relative">
 							<img src="./assets/img/installation/installation-2.jpg" alt="" class="installation-img">
 						</div>
-						<div class="installation-box-wrapp">
-							<h4 class="installation-box-title">
+						<div class="installation-box-wrapp position-relative">
+							<h4 class="installation-box-title  text-lg-start text-center">
 								Удобно
 							</h4>
 							<p class="installation-text">
@@ -613,15 +632,15 @@
 		</section>
 		<section class="record">
 			<div class="container ">
-				<div class="record-wrapp d-flex">
+				<div class="record-wrapp d-flex flex-lg-row flex-column align-items-end">
 					<div class="record-col">
-						<h3 class="record-title">
+						<h3 class="record-title text-lg-start text-center">
 							Вы из другого города?
 						</h3>
-						<p class="record-text">
+						<p class="record-text text-lg-start text-center">
 							У нас лечатся пациенты из Москвы, Санкт-Петербурга, Рязани и многих других городов.
 						</p>
-						<h4 class="record-subtitle">
+						<h4 class="record-subtitle  text-lg-start text-center">
 							Столичное качество по региональным ценам
 						</h4>
 						<ul class="record-list  record-line d-flex flex-wrap justify-content-start">
@@ -638,10 +657,10 @@
 								Бесплатная парковка
 							</li>
 						</ul>
-						<h4 class="record-subtitle-2">
+						<h4 class="record-subtitle-2  text-lg-start text-center">
 							Запишитесь на удаленную бесплатную консультацию
 						</h4>
-						<p class="record-consult">
+						<p class="record-consult  text-lg-start text-center">
 							На консультации вы узнаете:
 						</p>
 						<ul class="record-list --conslut  d-flex flex-wrap justify-content-start">
@@ -667,7 +686,7 @@
 						</a>
 					</div>
 					<div class="record-box-img position-relative">
-						<img src="./assets/img/record.png" alt="">
+						<img class="record-img" src="./assets/img/record.png" alt="">
 						<div class="record-box-text position-absolute">
 							<h5 class="recor-box-job">
 								Управляющий клиники
@@ -687,7 +706,7 @@
 					<span>счастливые</span>
 					пациенты
 				</h3>
-				<div class="patient-wrapp  d-flex justify-content-between">
+				<div class="patient-wrapp  d-flex flex-wrap justify-content-evenly">
 					<div class="patient-cart">
 						<img src="./assets/img/patient/img-1.jpg" alt="" class="patient-img">
 						<div class="patient-body position-relative">
@@ -762,12 +781,12 @@
 					Наша
 					<span> клиника</span>
 				</h3>
-				<div class="clinic-row d-flex align-items-center">
+				<div class="clinic-row d-flex flex-lg-row flex-column align-items-center">
 					<div class="clinic-box-img position-relative">
 						<img src="./assets/img/clinic/clinic-1.jpg" alt="" class="clinic-img position-absolute">
 					</div>
 					<div class="clinic-box position-relative">
-						<h4 class="clinic-box-title">
+						<h4 class="clinic-box-title  text-lg-start text-center">
 							Работаем на современном немецком оборудовании
 							<span>
 								CEREC
@@ -783,19 +802,22 @@
 						</p>
 					</div>
 				</div>
-				<div class="clinic-row clinic-row-reverse flex-row-reverse d-flex align-items-center">
+				<div class="clinic-row clinic-row-reverse flex-lg-row-reverse flex-column d-flex align-items-center">
 					<div class="clinic-box-img position-relative">
 						<img src="./assets/img/clinic/clinic-2.jpg" alt="" class="clinic-img position-absolute">
 					</div>
 					<div class="clinic-box  position-relative">
-						<h4 class="clinic-box-title">
+						<h4 class="clinic-box-title text-lg-start text-center">
 							Находимся в самом центре города
 						</h4>
 						<p class="clinic-box-text">
 							Наша клиника находится в г. Владимир, на ул. Большая Нижегородская 27. Это самый центр города.
 							Поэтому к нам очень легко и удобно добраться из любого района. Также, мы предлагаем бесплатную
 							удобную парковку во дворе.
-							Прием ведется с 8:00 до 22:00
+							<span class="clinic-box-span">
+								Прием ведется с 8:00 до 22:00
+							</span>
+		
 						</p>
 					</div>
 				</div>
@@ -804,12 +826,12 @@
 		<section class="quest quest-padding">
 			<div class="container">
 				<h3 class="title quest-title text-center">
-					Часто задаваемые вопросы
+					Часто задаваемые <span>вопросы</span>
 				</h3>
 		
 				<div class="quest-accordion-box">
 					<button
-						class="quest-accordion-head position-relative  w-100 d-flex align-items-center justify-content-start">
+						class="quest-accordion-head position-relative  w-100 d-flex align-items-center text-start justify-content-start">
 						Что такое виниры?
 					</button>
 					<div class="quest-accordion-body">
@@ -823,7 +845,7 @@
 		
 				<div class="quest-accordion-box">
 					<button
-						class="quest-accordion-head position-relative  w-100 d-flex align-items-center justify-content-start">
+						class="quest-accordion-head position-relative  w-100 d-flex align-items-center  text-start justify-content-start">
 						Композитные или керамика? В чем различие?
 					</button>
 					<div class="quest-accordion-body">
@@ -837,7 +859,7 @@
 		
 				<div class="quest-accordion-box">
 					<button
-						class="quest-accordion-head position-relative  w-100 d-flex align-items-center justify-content-start">
+						class="quest-accordion-head position-relative  w-100 d-flex align-items-center  text-start justify-content-start">
 						Больно ли устанавливать виниры?
 					</button>
 					<div class="quest-accordion-body">
@@ -849,7 +871,7 @@
 		
 				<div class="quest-accordion-box">
 					<button
-						class="quest-accordion-head position-relative  w-100 d-flex align-items-center justify-content-start">
+						class="quest-accordion-head position-relative  w-100 d-flex align-items-center  text-start justify-content-start">
 						Требуется ли депульпировать зубы?
 					</button>
 					<div class="quest-accordion-body">
@@ -862,7 +884,7 @@
 		
 				<div class="quest-accordion-box">
 					<button
-						class="quest-accordion-head position-relative w-100 d-flex align-items-center justify-content-start">
+						class="quest-accordion-head position-relative w-100 d-flex align-items-center  text-start justify-content-start">
 						Можно ли исправить выпирающий зуб виниром?
 					</button>
 					<div class="quest-accordion-body">
@@ -878,16 +900,16 @@
 		</section>
 		<section class="tell tell-padding">
 			<div class="container">
-				<div class="tel-wrapp d-flex justify-content-between">
+				<div class="tel-wrapp d-flex flex-lg-row flex-column  justify-content-between">
 					<div class="tell-coll">
-						<h3 class="tell-title">
+						<h3 class="tell-title text-lg-start text-center">
 							Остались вопросы?
 						</h3>
-						<p class="tell-text">
+						<p class="tell-text text-lg-start text-center">
 							Оставьте свой номер, мы с Вами свяжемся в ближайшее время!
 						</p>
 						<form action="/" class="tel-form">
-							<div class="tel-form-row d-flex justify-content-between">
+							<div class="tel-form-row d-flex flex-lg-row flex-column justify-content-between">
 								<input type="text" class="tel-input text-center" placeholder="Имя">
 								<input type="tel" class="tel-input mask-tell text-center" placeholder="Телефон">
 							</div>
@@ -899,14 +921,13 @@
 							</button>
 						</form>
 						<label class="tel-label position-relative d-flex justify-content-center">
-							<input type="checkbox" class="tel-label-input position-absolute	" checked>
+							<input type="checkbox" class="tel-label-input position-absolute" checked>
 							<span class="tel-label-span position-relative">
 								согласен с обработкой персноальных данных
 							</span>
 						</label>
 					</div>
 					<div class="tel-box-img position-relative">
-						<img src="./assets/img/tell.png" alt="" class="tel-img ">
 						<img src="./assets/img/tell-woman.png" alt="" class="tel-img position-absolute">
 						<div class="record-box-text tel-box-text position-absolute">
 							<h5 class="recor-box-job">
@@ -925,37 +946,44 @@
 		</div>
 		<footer class="footer footer-padding">
 			<div class="container">
-				<div class="footer-wrapp d-flex align-items-center justify-content-between">
+				<div
+					class="footer-wrapp d-flex flex-lg-row flex-column align-items-center justify-content-lg-between justify-content-center">
 					<a href="#" class="footer-logo">
 						<img src="./assets/img/logo.svg" alt="" class="footer-logo-img">
 					</a>
-					<div class="footer-page d-flex align-items-center justify-content-between">
-						<ul class="footer-list d-flex align-items-center justify-content-between">
+					<div
+						class="footer-page d-flex flex-lg-row flex-column  align-items-center justify-content-lg-between justify-content-center">
+						<ul
+							class="footer-list flex-lg-row flex-column  d-flex align-items-center justify-content-lg-between justify-content-center">
 							<li class="footer-list-inner">
-								<a href="#" class="footer-list-link footer-hover-fix header-hover d-block position-relative">
+								<a href="#"
+									class="footer-list-link text-lg-start text-center footer-hover-fix header-hover d-block position-relative">
 									Главная
 								</a>
 							</li>
 							<li class="footer-list-inner">
-								<a href="#" class="footer-list-link footer-link-back d-block  header-hover position-relative">
+								<a href="#"
+									class="footer-list-link footer-link-back  text-lg-start text-center d-block  header-hover position-relative">
 									Керамические виниры
 								</a>
 							</li>
 							<li class="footer-list-inner">
-								<a href="#" class="footer-list-link footer-hover-fix header-hover d-block  position-relative">
+								<a href="#"
+									class="footer-list-link footer-hover  text-lg-start text-center-fix header-hover d-block  position-relative">
 									Имплантация
 								</a>
 							</li>
 						</ul>
 		
-						<div class="footer-row d-flex ">
+						<div class="footer-row d-flex flex-lg-row flex-column ">
 							<div class="footer-coll">
 								<a href="tel:+74922773488"
-									class="footer-tell footer-hover-fix  header-hover  position-relative d-block text-end">
+									class="footer-tell footer-hover-fix  header-hover  position-relative d-block text-lg-end text-center">
 									+7 (4922) 773488
 								</a>
-								<a href=" #" class="footer-btn d-flex justify-content-end  text-end">
-									<span class="header-hover footer-hover-fix position-relative">
+								<a href=" #"
+									class="footer-btn d-flex justify-content-lg-end justify-content-center text-lg-end text-center">
+									<span class="header-hover footer-hover-fix position-relative text-lg-end text-center">
 										записаться на прием</span>
 								</a>
 							</div>
@@ -994,7 +1022,8 @@
 					</div>
 				</div>
 				<div class="footer-wrapper">
-					<a href="#" class="footer-link footer-hover-fix d-block text-end  d-block  header-hover position-relative">
+					<a href="#"
+						class="footer-link footer-hover-fix d-block text-lg-end text-center d-block  header-hover position-relative">
 						политика конфиденциальности
 					</a>
 				</div>
@@ -1026,7 +1055,7 @@
 					Наверх
 				</div>
 			</a>
-			<a href="#case" class="menu-link  scroll-link">
+			<a href="#product" class="menu-link  scroll-link">
 				<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<g clip-path="url(#clip0_203_310)">
 						<path fill-rule="evenodd" clip-rule="evenodd"
