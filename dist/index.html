@@ -26,40 +26,37 @@
 
 <body>
 	<div class="page">
-		<header id="header" class="header header-padding ">
-			<div class="container d-flex align-items-lg-start align-items-center justify-content-between">
-				<div class="logo position-relative">
-					<img class="logo-img" src="./assets/img/logo.svg" alt="">
-				</div>
-				<nav class="header-nav">
-					<ul class="header-list d-flex align-items-center justify-content-between">
-						<li class="header-list-inner d-none d-lg-block">
-							<a href="#"
-								class="header-list-link header-mob  header-hover scroll-link  d-block  position-relative ">
-								Главная
-							</a>
-						</li>
-						<li class="header-list-inner">
-							<a href="#"
-								class="header-list-link  header-list-center scroll-link position-relative  d-flex align-items-center justify-content-center">
-								Керамические виниры
-							</a>
-						</li>
-						<li class="header-list-inner d-none d-lg-block">
-							<a href="#"
-								class="header-list-link   header-hover scroll-link  d-block   position-relative  text-center">
-								Имплантация
-							</a>
-						</li>
-					</ul>
-				</nav>
-				<div class="header-col">
-					<a href="tel:+74922773488" class="header-tell  header-hover  position-relative d-none d-lg-block text-end">
-						+7 (4922) 773488
-					</a>
-					<a href=" #" class="header-btn d-lg-flex d-none justify-content-end  text-end">
-						<span class="header-hover position-relative">
-							записаться на прием</span>
+		<header id="header" class="header header-padding position-relative">
+			<div class="container">
+				<div class="header-mob-row d-lg-none d-flex align-items-center justify-content-between">
+					<button class="header-menu-open d-flex align-items-center justify-content-center">
+						<svg width="40" height="21" viewBox="0 0 40 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect width="40" height="3" rx="1.5" fill="url(#paint0_linear_309_685)" />
+							<rect y="9" width="35" height="3" rx="1.5" fill="url(#paint1_linear_309_685)" />
+							<rect y="18" width="40" height="3" rx="1.5" fill="url(#paint2_linear_309_685)" />
+							<defs>
+								<linearGradient id="paint0_linear_309_685" x1="-6.53658" y1="0.487499" x2="40.0001" y2="21.0302"
+									gradientUnits="userSpaceOnUse">
+									<stop offset="0" stop-color="#049CB3" />
+									<stop offset="1" stop-color="#34E4FF" />
+								</linearGradient>
+								<linearGradient id="paint1_linear_309_685" x1="-5.71951" y1="9.4875" x2="36.6183" y2="25.8406"
+									gradientUnits="userSpaceOnUse">
+									<stop offset="0" stop-color="#049CB3" />
+									<stop offset="1" stop-color="#34E4FF" />
+								</linearGradient>
+								<linearGradient id="paint2_linear_309_685" x1="-6.53658" y1="18.4875" x2="40.0001" y2="39.0302"
+									gradientUnits="userSpaceOnUse">
+									<stop offset="0" stop-color="#049CB3" />
+									<stop offset="1" stop-color="#34E4FF" />
+								</linearGradient>
+							</defs>
+						</svg>
+		
+					</button>
+					<a href="#"
+						class="header-list-link  header-list-center scroll-link position-relative  d-flex align-items-center justify-content-center">
+						Керамические виниры
 					</a>
 					<a href="tel:74922773488" class="header-mob-btn d-lg-none d-flex align-items-center justify-content-center">
 						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,6 +65,53 @@
 								fill="white" />
 						</svg>
 					</a>
+				</div>
+				<div
+					class="header-mob d-flex flex-lg-row flex-column align-items-lg-start align-items-center justify-content-between">
+					<a href="#" class="logo position-relative --close">
+						<img class="logo-img" src="./assets/img/logo.svg" alt="">
+					</a>
+					<nav class="header-nav">
+						<ul
+							class="header-list d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-center">
+							<li class="header-list-inner">
+								<a href="#"
+									class="header-list-link header-list--mob-link  --close  header-hover  d-block  position-relative ">
+									Главная
+								</a>
+							</li>
+							<li class="header-list-inner">
+								<a href="#"
+									class="header-list-link  header-list--mob-link --fix-mob --close header-list-center  position-relative  d-flex align-items-center align-items-start justify-content-lg-center justify-content-start">
+									Керамические виниры
+								</a>
+							</li>
+							<li class="header-list-inner">
+								<a href="#"
+									class="header-list-link header-list--mob-link   --close  header-hover   d-block   position-relative  text-center">
+									Имплантация
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header-col">
+						<a href="tel:+74922773488"
+							class="header-tell --close  header-hover  position-relative  d-block text-lg-end text-center">
+							+7 (4922) 773488
+						</a>
+						<a href=" #" class="header-btn d-flex --close justify-content-lg-end justify-content-center  text-end">
+							<span class="header-hover position-relative">
+								записаться на прием</span>
+						</a>
+		
+					</div>
+					<button class="header-menu-close --close d-flex d-lg-none align-items-center justify-content-between">
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect x="14.4512" width="2.1897" height="20.4372" transform="rotate(45 14.4512 0)" fill="#D9D9D9" />
+							<rect width="2.1897" height="20.4372"
+								transform="matrix(-0.707107 0.707107 0.707107 0.707107 1.54883 0)" fill="#D9D9D9" />
+						</svg>
+					</button>
 				</div>
 			</div>
 		</header>
@@ -1241,6 +1285,7 @@
 			</label>
 		</div>
 	</div>
+	<div class="fon"></div>
 	<script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU">
 	</script>
 	<script>

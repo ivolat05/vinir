@@ -137,4 +137,34 @@ $(function () {
 	}
 	accordionBox();
 
+	//menu
+	function menu() {
+		let body = document.querySelector('body');
+		let fonBack = document.querySelector('.fon');
+		let menuOpenBtn = document.querySelector('.header-menu-open');
+		let menuBox = document.querySelector('.header-mob');
+		let menuBtnClose = document.querySelectorAll('.--close');
+		if (menuBtnClose && menuBox && menuOpenBtn && fonBack) {
+			menuOpenBtn.addEventListener('click', () => {
+				body.classList.add('stop');
+				menuBox.classList.add('active');
+				fonBack.classList.add('active');
+			})
+			fonBack.addEventListener('click', () => {
+				body.classList.remove('stop');
+				menuBox.classList.remove('active');
+				fonBack.classList.remove('active');
+			})
+			menuBtnClose.forEach(item => {
+				item.addEventListener('click', () => {
+					body.classList.remove('stop');
+					menuBox.classList.remove('active');
+					fonBack.classList.remove('active');
+				})
+			})
+
+		}
+	}
+
+	menu();
 })
