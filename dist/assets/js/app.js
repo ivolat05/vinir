@@ -41,6 +41,13 @@ $(function () {
 		return false;
 	});
 
+	// popup
+
+	$('.open-modal').magnificPopup({
+		type: 'inline',
+		mainClass: 'mfp-fade'
+	});
+
 
 	$('.gallery').magnificPopup({
 		delegate: 'a',
@@ -53,6 +60,21 @@ $(function () {
 			preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
 		}
 	});
+
+	//popup close
+	function closePopup(closeBtn) {
+		let popupClose = document.querySelectorAll(`.${closeBtn}`);
+		if (popupClose) {
+			popupClose.forEach((item) => {
+				item.addEventListener('click', () => {
+					$.magnificPopup.close();
+				})
+			})
+		}
+
+
+	}
+	closePopup('popup-close');
 
 	$(".doctor-slider").slick({
 		slidesToShow: 2,
