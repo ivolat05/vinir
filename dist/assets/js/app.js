@@ -118,6 +118,30 @@ $(function () {
 		]
 	});
 
+	$(".clinic-wrapp").slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		dots: true,
+		infinite: true,
+		arrows: false,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 550,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
+	});
+
 	// accordion
 	function accordionBox() {
 		let accordionBtn = document.querySelectorAll(".quest-accordion-head");
