@@ -102,7 +102,9 @@ $(function () {
 
 	$('.open-modal').magnificPopup({
 		type: 'inline',
-		mainClass: 'mfp-fade'
+		mainClass: 'mfp-fade',
+		autoFocusLast: false
+
 	});
 
 
@@ -198,6 +200,15 @@ $(function () {
 			}
 		]
 	});
+
+	$(".main-slaider").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		infinite: true,
+		arrows: false
+	});
+
 
 	// accordion
 	function accordionBox() {
