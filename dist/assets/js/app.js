@@ -259,4 +259,19 @@ $(function () {
 	}
 
 	menu();
+	// виды работ
+	function servisecInfo() {
+		let btn = document.querySelectorAll('.services-content');
+		let servicesInfoText = document.querySelector('.services-info-text');
+		if (servicesInfoText) {
+			btn.forEach(item => {
+				item.addEventListener('click', () => {
+					let textBox = item.getAttribute('data-services');
+
+					servicesInfoText.textContent = textBox
+				})
+			})
+		}
+	}
+	servisecInfo();
 })
