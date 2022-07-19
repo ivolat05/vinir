@@ -260,18 +260,24 @@ $(function () {
 
 	menu();
 	// виды работ
-	function servisecInfo() {
-		let btn = document.querySelectorAll('.services-content');
-		let servicesInfoText = document.querySelector('.services-info-text');
+	// nameBtn-класс кнопки появления модального окна
+	// dataName - наименование аттрибута содержащего информацию
+	// boxText - наименование класс контейнера для текста
+	// inputName- наименование класса скрытого инпута для передачи информации
+	function servisecInfo(nameBtn, boxText, dataName, inputName) {
+		let btn = document.querySelectorAll(`${nameBtn}`);
+		let servicesInfoText = document.querySelector(`${boxText}`);
 		if (servicesInfoText) {
 			btn.forEach(item => {
 				item.addEventListener('click', () => {
-					let textBox = item.getAttribute('data-services');
+					let textBox = item.getAttribute(`${dataName}`);
+					let inputInfo = document.querySelector(`${inputName}`);
 
-					servicesInfoText.textContent = textBox
+					servicesInfoText.textContent = textBox;
+					inputInfo.value = textBox;
 				})
 			})
 		}
 	}
-	servisecInfo();
+	servisecInfo('.services-content', '.services-info-text', 'data-services', '.input-info');
 })
