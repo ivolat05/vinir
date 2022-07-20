@@ -282,4 +282,54 @@ $(function () {
 		}
 	}
 	servisecInfo('.services-content', '.services-info-text', 'data-services', '.input-info');
+
+	// equipment slaider
+	if (window.innerWidth <= 992) {
+		$(".equipment-slaider").slick({
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			dots: true,
+			infinite: true,
+			arrows: false,
+			rows: 0,
+			responsive: [
+				{
+					breakpoint: 660,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+			]
+		});
+
+
+	}
+
+	window.addEventListener("resize", function () {
+		if (window.innerWidth <= 992) {
+			$(".equipment-slaider").not('.slick-initialized').slick({
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				dots: true,
+				infinite: true,
+				arrows: false,
+				rows: 0,
+				responsive: [
+					{
+						breakpoint: 660,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+					}
+				]
+			});
+
+
+		} else {
+			$('.equipment-slaider').filter('.slick-initialized').slick('unslick');
+		}
+	});
+
 })
