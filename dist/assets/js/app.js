@@ -108,6 +108,7 @@ $(function () {
 	});
 
 
+
 	$('.gallery').magnificPopup({
 		delegate: 'a',
 		type: 'image',
@@ -206,7 +207,8 @@ $(function () {
 		slidesToScroll: 1,
 		dots: true,
 		infinite: true,
-		arrows: false
+		arrows: false,
+		rows: 0
 	});
 
 
