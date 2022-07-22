@@ -121,6 +121,14 @@ $(function () {
 		}
 	});
 
+	//patient-open
+	$('.patient-open, .open-modal').magnificPopup({
+		closeBtnInside: true,
+		type: 'inline',
+		mainClass: 'mfp-img mfp-btn-color',
+		autoFocusLast: false
+	});
+
 	//popup close
 	function closePopup(closeBtn) {
 		let popupClose = document.querySelectorAll(`.${closeBtn}`);
@@ -205,6 +213,8 @@ $(function () {
 	$(".main-slaider").slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 5000,
 		dots: true,
 		infinite: true,
 		arrows: false,
