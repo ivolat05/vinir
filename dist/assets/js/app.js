@@ -27,7 +27,8 @@ $(function () {
 	// маска телефона
 
 
-	$('.mask-tell').inputmask("+X (999) 999-9999", {
+
+	$('.mask-tell').inputmask("+7 (999) 999-9999", {
 		definitions: {
 			"X": {
 				validator: "[7-8]",
