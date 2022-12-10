@@ -344,4 +344,51 @@ $(function () {
 		}
 	});
 
+	if (window.innerWidth <= 992) {
+		$(".option-slaider").not('.slick-initialized').slick({
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			dots: true,
+			infinite: true,
+			arrows: false,
+			responsive: [
+				{
+					breakpoint: 660,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+			]
+		});
+
+
+	} else {
+		$('.option-slaider').filter('.slick-initialized').slick('unslick');
+	}
+	window.addEventListener("resize", function () {
+		if (window.innerWidth <= 992) {
+			$(".option-slaider").not('.slick-initialized').slick({
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				dots: true,
+				infinite: true,
+				arrows: false,
+				responsive: [
+					{
+						breakpoint: 660,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+					}
+				]
+			});
+
+
+		} else {
+			$('.option-slaider').filter('.slick-initialized').slick('unslick');
+		}
+	});
+
 })
