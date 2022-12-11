@@ -127,7 +127,7 @@
 				</div>
 			</div>
 		</header>
-		<main class="main-home  position-relative" data-aos="fade-up">
+		<main class="main-home  position-relative main-orthodontist" data-aos="fade-up">
 			<div class="container main-home-container">
 				<div class="main-slaider main-slaider-ort">
 					<div
@@ -152,10 +152,7 @@
 							</a>
 						</div>
 						<div class="main-slaider-box-img --ort-img-box d-flex">
-							<img src="./assets/img/main/main-slaider-ort.png" alt=""
-								class="main-slaider-img-ort d-none d-lg-block">
-							<img src="./assets/img/main/main-slaider-ort-mob.png" alt=""
-								class="main-slaider-img-ort d-block d-lg-none">
+							<img src="./assets/img/main/main-slaider-ort.png" alt="" class="main-slaider-img-ort ">
 						</div>
 					</div>
 		
@@ -231,8 +228,8 @@
 				<div class="main-page d-flex flex-wrap justify-content-around" data-aos="fade-up">
 					<div class="main-page-box">
 						<img src="./assets/img/main/main-icon-1.svg" alt="" class="main-page-img main-page-img-ort">
-						<h3 class="main-page-title   main-page-title-ort   text-center text-lg-start">
-							Под любой <br> бюджет
+						<h3 class="main-page-title -one  main-page-title-ort   text-center text-lg-start">
+							Под любой бюджет
 						</h3>
 						<p class="main-page-text  text-center text-lg-start">
 							Подберем клиническое решение
@@ -263,10 +260,10 @@
 		
 					<div class="main-page-box --fixed">
 						<img src="./assets/img/main/main-icon-4.svg" alt="" class="main-page-img  main-page-img-ort">
-						<h3 class="main-page-title  main-page-title-ort text-center text-lg-start">
-							В кратчайшие <br> сроки
+						<h3 class="main-page-title -four  main-page-title-ort text-center text-lg-start">
+							В кратчайшие сроки
 						</h3>
-						<p class="main-page-text  text-center text-lg-start">
+						<p class="main-page-text -four  text-center text-lg-start">
 							Составим план, по которому ношение брекетов будет минимальным
 						</p>
 					</div>
@@ -282,7 +279,7 @@
 						брекет-систем
 					</span>
 				</h3>
-				<div class="option-row  d-block d-lg-flex justify-content-between align-items-start">
+				<div data-aos="fade-up" class="option-row  d-block d-lg-flex justify-content-between align-items-start">
 					<div class="optiin-coll">
 						<div class="option-head">
 							<img src="./assets/img/option/option-1.jpg" alt="" class="option-head-title">
@@ -344,7 +341,8 @@
 					</div>
 				</div>
 		
-				<div class="option-row option-row--two  d-block d-lg-flex justify-content-between align-items-start">
+				<div data-aos="fade-up"
+					class="option-row option-row--two  d-block d-lg-flex justify-content-between align-items-start">
 					<div class="optiin-coll">
 						<div class="option-head">
 							<img src="./assets/img/option/option-2.jpg" alt="" class="option-head-title">
@@ -411,7 +409,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="option-row d-block d-lg-flex justify-content-between align-items-start">
+				<div data-aos="fade-up" class="option-row d-block d-lg-flex justify-content-between align-items-start">
 					<div class="optiin-coll">
 						<div class="option-head">
 							<img src="./assets/img/option/option-4.jpg" alt="" class="option-head-title">
@@ -468,7 +466,8 @@
 					</div>
 				</div>
 		
-				<div class="option-row option-row-four   d-block d-lg-flex justify-content-between align-items-start">
+				<div data-aos="fade-up"
+					class="option-row option-row-four   d-block d-lg-flex justify-content-between align-items-start">
 					<div class="optiin-coll">
 						<div class="option-head">
 							<img src="./assets/img/option/option-3.jpg" alt="" class="option-head-title">
@@ -681,7 +680,8 @@
 					<span>
 						4 шага
 					</span>
-					к Вашей новой улыбке
+					к Вашей <span class="setp-title-span d-none d-lg-inline">новой</span> <span
+						class="setp-title-span d-inline d-lg-none">неотразимой</span> улыбке
 				</h3>
 				<div class="step-wrapp">
 		
@@ -775,12 +775,20 @@
 				</div>
 			</div>
 		</section>
-		<section class="doctor doctor-padding " data-aos="fade-left">
+		<section class="doctor doctor-padding doctor-orthofont" data-aos="fade-left">
 			<div class="container">
 				<div class="doctor-wrapp d-flex position-relative flex-lg-row flex-column justify-content-start">
+					<div class="doctor-position d-block d-lg-none">
+						<h3 class="doctor-subtitle text-lg-start text-center">
+							Ведуший врач
+						</h3>
+						<h3 class="doctor-title  text-lg-start text-center">
+							клиники по ортодонтии
+						</h3>
+					</div>
 					<img src="./assets/img/employee/employee-5.png" alt="" class="doctor-img">
 					<div class="doctor-wrapp-coll">
-						<div class="doctor-position">
+						<div class="doctor-position d-none d-lg-block">
 							<h3 class="doctor-subtitle text-lg-start text-center">
 								Ведуший врач
 							</h3>
@@ -1071,13 +1079,16 @@
 						</label>
 					</div>
 					<div class="tel-box-img tel-box-img-implant position-relative">
-						<img class="tel-img tel-img-implant position-absolute" src="./assets/img/tell-woman-2.png" alt="">
+						<img class="tel-img tel-img-implant position-absolute d-none d-sm-block"
+							src="./assets/img/tell-woman-2.png" alt="">
+						<img class="tel-img tel-img-implant position-absolute d-block d-sm-none"
+							src="./assets/img/tell-woman-2-mob.png" alt="">
 						<div class="record-box-text tel-box-text tel-box-text-implant position-absolute">
 							<h5 class="recor-box-job">
 								Администратор клиники
 							</h5>
 							<p class="record-box-name">
-								Алесандрова <br>
+								Алесандрова
 								Анастасия Олеговна
 							</p>
 						</div>
@@ -1109,6 +1120,7 @@
 				</p>
 			</div>
 		</section>
+	
 		<section class="patient patient-padding-implant patient-orthodontist">
 			<div class="container">
 				<h3 class="title patient-title-implant text-center" data-aos="zoom-in">
@@ -1179,7 +1191,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="quest quest-padding-implant" data-aos="zoom-in">
+		<section class="quest quest-padding-implant quest-orthodontist" data-aos="zoom-in">
 			<div class="container">
 				<h3 class="title quest-title quest-title-implant text-center">
 					Часто задаваемые <span>вопросы</span>
@@ -1243,6 +1255,7 @@
 		
 			</div>
 		</section>
+	
 		<section class="tell tell-padding tell-padding-fix tell-fix-orthodontist" data-aos="flip-down">
 			<div class="container">
 				<div class="tel-wrapp d-flex flex-lg-row flex-column  justify-content-between">
@@ -1274,13 +1287,15 @@
 						</label>
 					</div>
 					<div class="tel-box-img position-relative">
-						<img src="./assets/img/tell-woman.png" alt="" class="tel-img position-absolute">
+						<img src="./assets/img/tell-woman.png" alt="" class="tel-img position-absolute  d-none d-sm-block">
+						<img class="tel-img tel-img-implant position-absolute d-block d-sm-none"
+							src="./assets/img/tell-woman-2-mob.png" alt="">
 						<div class="record-box-text tel-box-text position-absolute">
 							<h5 class="recor-box-job">
 								Администратор клиники
 							</h5>
 							<p class="record-box-name">
-								Алесандрова <Br>
+								Алесандрова
 								Анастасия Олеговна
 							</p>
 						</div>
@@ -1288,6 +1303,7 @@
 				</div>
 			</div>
 		</section>
+	
 		<div class="maps maps-padding-implant">
 			<div id="map" class="map"></div>
 		</div>

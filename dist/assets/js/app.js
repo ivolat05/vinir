@@ -214,8 +214,8 @@ $(function () {
 	$(".main-slaider").slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 5000,
+		//autoplay: true,
+		//autoplaySpeed: 5000,
 		adaptiveHeight: true,
 		dots: true,
 		infinite: true,
@@ -351,15 +351,7 @@ $(function () {
 			dots: true,
 			infinite: true,
 			arrows: false,
-			responsive: [
-				{
-					breakpoint: 660,
-					settings: {
-						slidesToShow: 1,
-						slidesToScroll: 1
-					}
-				}
-			]
+
 		});
 
 
@@ -374,15 +366,7 @@ $(function () {
 				dots: true,
 				infinite: true,
 				arrows: false,
-				responsive: [
-					{
-						breakpoint: 660,
-						settings: {
-							slidesToShow: 1,
-							slidesToScroll: 1
-						}
-					}
-				]
+
 			});
 
 
